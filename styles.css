@@ -5,17 +5,31 @@ body {
     padding: 0;
 }
 
+.title {
+    text-align: center;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     height: 100vh;
+    background-color: rgb(49, 49, 49);
 }
 
-.left-window, .middle-section, .right-window {
-    border: 1px solid #ccc;
+.left-window, .right-window {
+    border: 1px solid;
     padding: 10px;
     position: relative;
+    background-color: rgb(74, 68, 68);
+
+}
+
+.middle-section {
+    border: 1px solid;
+    padding: 10px;
+    position: relative;
+    background-color: gray;
 }
 
 .left-window, .right-window {
@@ -30,29 +44,43 @@ body {
     width: 10%;
 }
 
-
 textarea {
     margin-left: 35px; /* Adjust margin to leave space for line numbers */
-    width: calc(100% - 35px); /* Adjust width to accommodate line numbers */
+    width: calc(100% - 70px); /* Adjust width to accommodate line numbers */
     resize: none; /* Prevent resizing */
+    background-color: rgb(182, 182, 182);
+}
+
+/* Line numbers */
+.line-numbers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 10px 5px; /* Adjust padding for proper alignment */
+    color: #aaa;
+    pointer-events: none;
+    user-select: none;
+    width: 30px; /* Adjust width to fit line numbers */
+    text-align: right; /* Align numbers to the right */
 }
 
 button {
-    border-radius: 25px;
+    border-radius: 30px;
     margin-top: 10px;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #1b2836;
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 select {
     border-radius: 25px;
-    margin-top: 7px;
+    margin-top: 20px;
     padding: 5px;
-    background-color: #007bff;
+    background-color: #1b2836;
     color: #fff;
     border: none;
     cursor: pointer;

@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WCPS Code Beautifier</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Include CodeMirror CSS -->
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
 </head>
 <body>
     <div class="container">
         <div class="left-window">
-            <!-- Input window -->
+            <!-- Line numbers for input textarea -->
+            <div id="input-line-numbers" class="line-numbers"></div>
+            <!-- Input window with CodeMirror -->
             <textarea id="input" rows="50" cols="50" placeholder="Enter your WCPS code here..."></textarea>
         </div>
         <div class="middle-section">
-            <h1>WCPS Code Beautifier</h1>
+            <h1 class="title">WCPS Code Beautifier</h1>
             <!-- Beautify button -->
             <button id="beautify-btn">Beautify</button>
             <br/>
@@ -31,10 +35,17 @@
             </select>
         </div>
         <div class="right-window">
+            <!-- Line numbers for output textarea -->
+            <div id="output-line-numbers" class="line-numbers"></div>
             <!-- Output window -->
             <textarea id="output" rows="50" cols="50" placeholder="Beautified code will appear here..." readonly></textarea>
         </div>
     </div>
+    <!-- Include CodeMirror JS -->
+    <script src="codemirror/lib/codemirror.js"></script>
+    <!-- Include JavaScript mode for CodeMirror -->
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <!-- Include your script.js -->
     <script src="script.js"></script>
 </body>
 </html>
