@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCPS Code Beautifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-window">
+            <!-- Input window -->
+            <textarea id="input" rows="50" cols="50" placeholder="Enter your WCPS code here..."></textarea>
+        </div>
+        <div class="middle-section">
+            <h1>WCPS Code Beautifier</h1>
+            <!-- Beautify button -->
+            <button id="beautify-btn">Beautify</button>
+            <br/>
+            <!-- Dropdown menus -->
+            <select id="beautify-type">
+                <option value="code">Code</option>
+                <option value="text">Text</option>
+                <option value="tree">Tree</option>
+            </select>
+            <br/>
+            <select id="tab-spacing">
+                <option value="2">2 Tab Spacing</option>
+                <option value="3">3 Tab Spacing</option>
+                <option value="4">4 Tab Spacing</option>
+            </select>
+        </div>
+        <div class="right-window">
+            <!-- Output window -->
+            <textarea id="output" rows="50" cols="50" placeholder="Beautified code will appear here..." readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.left-window, .middle-section, .right-window {
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+}
+
+.left-window, .right-window {
+    width: 45%;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+
+textarea {
+    margin-left: 35px; /* Adjust margin to leave space for line numbers */
+    width: calc(100% - 35px); /* Adjust width to accommodate line numbers */
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+select {
+    border-radius: 25px;
+    margin-top: 7px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
