@@ -44,11 +44,12 @@ body {
     width: 10%;
 }
 
+
 textarea {
     margin-left: 35px; /* Adjust margin to leave space for line numbers */
     width: calc(100% - 70px); /* Adjust width to accommodate line numbers */
     resize: none; /* Prevent resizing */
-    background-color: rgb(182, 182, 182);
+    background-color: rgb(193, 193, 193);
 }
 
 /* Line numbers */
