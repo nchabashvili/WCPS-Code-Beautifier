@@ -50,21 +50,20 @@ textarea {
     width: calc(100% - 70px); /* Adjust width to accommodate line numbers */
     resize: none; /* Prevent resizing */
     background-color: rgb(193, 193, 193);
+    height: 90vh;
+    font-size: 17px;
 }
 
-/* Line numbers */
-.line-numbers {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    padding: 10px 5px; /* Adjust padding for proper alignment */
-    color: #aaa;
-    pointer-events: none;
-    user-select: none;
-    width: 30px; /* Adjust width to fit line numbers */
-    text-align: right; /* Align numbers to the right */
+#editor {
+    margin-left: 35px; /* Adjust margin to leave space for line numbers */
+    width: calc(100% - 70px); /* Adjust width to accommodate line numbers */
+    resize: none; /* Prevent resizing */
+    background-color: rgb(193, 193, 193);
+    height: 90vh;
+    font-size: 17px;
 }
+
+
 
 button {
     border-radius: 30px;

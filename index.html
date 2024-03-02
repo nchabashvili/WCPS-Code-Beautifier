@@ -11,10 +11,7 @@
 <body>
     <div class="container">
         <div class="left-window">
-            <!-- Line numbers for input textarea -->
-            <div id="input-line-numbers" class="line-numbers"></div>
-            <!-- Input window with CodeMirror -->
-            <textarea id="input" rows="50" cols="50" placeholder="Enter your WCPS code here..."></textarea>
+            <div id="editor"></div>
         </div>
         <div class="middle-section">
             <h1 class="title">WCPS Code Beautifier</h1>
@@ -41,10 +38,8 @@
             <textarea id="output" rows="50" cols="50" placeholder="Beautified code will appear here..." readonly></textarea>
         </div>
     </div>
-    <!-- Include CodeMirror JS -->
-    <script src="codemirror/lib/codemirror.js"></script>
-    <!-- Include JavaScript mode for CodeMirror -->
-    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <!-- ace -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ace.js"></script>
     <!-- Include your script.js -->
     <script src="script.js"></script>
 </body>
