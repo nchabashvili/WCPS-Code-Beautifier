@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WCPS Code Beautifier</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- Include CodeMirror CSS -->
-    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
-</head>
-<body>
+   
+  </head>
+  <body>
     <div class="container">
-        <div class="left-window">
-            <div id="editor"></div>
-        </div>
-        <div class="middle-section">
-            <h1 class="title">WCPS Code Beautifier</h1>
-            <!-- Beautify button -->
-            <button id="beautify-btn">Beautify</button>
-            <br/>
-            <!-- Dropdown menus -->
-            <select id="case">
-                <option value="uppercase">uppercase</option>
-                <option value="lowercase">lowercase</option>
-                <option value="capitalize">capitalize</option>
-                <option value="none">none</option>
-            </select>
-            <br/>
-            <select id="tab-spacing">
-                <option value="2">2 Tab Space</option>
-                <option value="3">3 Tab Space</option>
-                <option value="4">4 Tab Space</option>
-            </select>
-        </div>
-        <div class="right-window">
-            <!-- Line numbers for output textarea -->
-            <div id="output-line-numbers" class="line-numbers"></div>
-            <!-- Output window -->
-            <div id="output" class="editor"></div>
-        </div>
+      <div class="left-window">
+        <div id="editor"></div>
+      </div>
+      <div class="middle-section">
+        <h1 class="title">WCPS Code Beautifier</h1>
+        <!-- Beautify button -->
+        <button id="beautify-btn">Beautify</button>
+        <br />
+        <!-- Dropdown menus -->
+        <select id="case">
+          <option value="uppercase">uppercase</option>
+          <option value="lowercase">lowercase</option>
+          <option value="capitalize">capitalize</option>
+          <option value="none">none</option>
+        </select>
+        <br />
+        <select id="tab-spacing">
+          <option value="2">2 Tab Space</option>
+          <option value="3">3 Tab Space</option>
+          <option value="4">4 Tab Space</option>
+        </select>
+      </div>
+      <div class="right-window">
+        <!-- Line numbers for output textarea -->
+        <div id="output-line-numbers" class="line-numbers"></div>
+        <!-- Output window -->
+        <div id="output" class="editor"></div>
+      </div>
     </div>
+
+    <script src="./WCPSBeautifier.js"></script>
     <!-- ace -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ace.js"></script>
-    <!-- Include CodeMirror JS -->
-    <script src="codemirror/lib/codemirror.js"></script>
-    <!-- Include JavaScript mode for CodeMirror -->
-    <script src="codemirror/mode/javascript/javascript.js"></script>
     <!-- Include your script.js -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
