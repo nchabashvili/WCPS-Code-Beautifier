@@ -19,27 +19,32 @@
             <button id="beautify-btn">Beautify</button>
             <br/>
             <!-- Dropdown menus -->
-            <select id="beautify-type">
-                <option value="code">Code</option>
-                <option value="text">Text</option>
-                <option value="tree">Tree</option>
+            <select id="case">
+                <option value="uppercase">uppercase</option>
+                <option value="lowercase">lowercase</option>
+                <option value="capitalize">capitalize</option>
+                <option value="none">none</option>
             </select>
             <br/>
             <select id="tab-spacing">
-                <option value="2">2 Tab Spacing</option>
-                <option value="3">3 Tab Spacing</option>
-                <option value="4">4 Tab Spacing</option>
+                <option value="2">2 Tab Space</option>
+                <option value="3">3 Tab Space</option>
+                <option value="4">4 Tab Space</option>
             </select>
         </div>
         <div class="right-window">
             <!-- Line numbers for output textarea -->
             <div id="output-line-numbers" class="line-numbers"></div>
             <!-- Output window -->
-            <textarea id="output" rows="50" cols="50" placeholder="Beautified code will appear here..." readonly></textarea>
+            <div id="output" class="editor"></div>
         </div>
     </div>
     <!-- ace -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ace.js"></script>
+    <!-- Include CodeMirror JS -->
+    <script src="codemirror/lib/codemirror.js"></script>
+    <!-- Include JavaScript mode for CodeMirror -->
+    <script src="codemirror/mode/javascript/javascript.js"></script>
     <!-- Include your script.js -->
     <script src="script.js"></script>
 </body>
