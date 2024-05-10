@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get references to the elements
   let editor = ace.edit("editor"); // Initialize Ace editor for input
   let beautifyBtn = document.getElementById("beautify-btn");
+  let clearBtn = document.getElementById("clear-btn");
   let outputEditor = ace.edit("output"); // Initialize Ace editor for output
   let tabSpacingDropdown = document.getElementById("tab-spacing");
   let caseOption = document.getElementById("case");
@@ -35,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Set the result in the output editor
     outputEditor.getSession().setValue(result);
   });
+
+  clearBtn.addEventListener("click", function () {
+    outputEditor.getSession().setValue("");
+  })
 
   // Function to beautify the code
   function beautifyCode(code, tabSpacingValue, caseOpt, useCompTabs) {

@@ -53,19 +53,6 @@ textarea, #editor, .editor {
     font-size: 17px;
 }
 
-/* Line numbers */
-.line-numbers {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    padding: 10px 5px; /* Adjust padding for proper alignment */
-    color: #aaa;
-    pointer-events: none;
-    user-select: none;
-    width: 30px; /* Adjust width to fit line numbers */
-    text-align: right; /* Align numbers to the right */
-}
 
 button {
     border-radius: 30px;
