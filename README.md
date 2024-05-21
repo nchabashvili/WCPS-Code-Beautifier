@@ -14,3 +14,41 @@
 2. **Specify Options**: Choose your desired beautification options.
 3. **Beautify**: Press the "Beautify" button.
 4. **Get Formatted Query**: View the formatted query in the right output window.
+
+
+## Example
+
+Before Beautification:
+
+```bash
+for $c in (CoverageName)
+let threshold := 100,
+$maxPerLat := condense + over $pLat Lat(domain($c, Lat))
+using max($c[Lat($pLat)]),
+$filteredMaxPerLat:=switch
+case $maxPerLat >$threshold return $maxPerLat
+default return 0
+return encode($filteredMaxPerLat, "text/csv")
+```
+
+After Beautification:
+
+```bash
+for $c in (CoverageName)
+let threshold := 100,
+    $maxPerLat := 
+        condense +
+        over $pLat Lat(domain($c, Lat))
+        using max($c[Lat($pLat)]),
+    $filteredMaxPerLat := 
+        switch
+        case $maxPerLat > $threshold
+            return $maxPerLat
+        default
+            return 0
+return
+    encode(
+        $filteredMaxPerLat,
+        "text/csv"
+    )
+```
