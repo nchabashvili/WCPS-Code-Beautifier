@@ -52,3 +52,6 @@ return
         "text/csv"
     )
 ```
+
+### WCPSBeautifier.js
+The beautifier was written in typeScript and later transpiled in javascript. you can find the code for it here: [WCPS-Code-Beautifier](https://github.com/nchabashvili/WcpsBeautifier)
